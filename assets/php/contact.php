@@ -46,6 +46,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <style>
     /* Estilos generales */
     body {
+        position: relative;
+        z-index: 1;
+        padding: 160px 0 120px;
+        background-image: url(../img/hero/fondo1.png); /* Verifica que la ruta sea correcta */
+        background-repeat: no-repeat;
+        background-position: left bottom;
+        background-size: cover;
         font-family: Arial, sans-serif;
         line-height: 1.6;
         background-color: #f4f4f4;
@@ -82,10 +89,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 <div class="container">
-    <h1>Asunto: '.$subject.'</h1>
+    <h1>Asunto: ' . $subject . '</h1>
     <p class="saludo">Estimado Sr. Jordel ,</p>
-    <p>'.$message.'</p>
-    <p class="footer">Saludos cordiales,<br>'.$name.'<br>Teléfono: '.$number.'<br>Correo electrónico: '.$email.'</p>
+    <p>' . $message . '</p>
+    <p class="footer">Saludos cordiales,<br>' . $name . '<br>Teléfono: ' . $number . '<br>Correo electrónico: ' . $email . '</p>
 </div>
 </body>
 </html>
@@ -107,29 +114,49 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/error-404s/error-404-1/assets/css/error-404-1.css">
-        <section class="py-3 py-md-5 min-vh-100 d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div style="text-align: center;">
-                        <figure class="figure">
-                            <img src="../img/logo.png" class="figure-img img-fluid rounded" alt="...">
-                        </figure>
+        <style>
+            body {
+                position: relative;
+                z-index: 1;
+                padding: 160px 0 120px;
+                background-image: url(../img/hero/fondo1.png);
+                /* Verifica que la ruta sea correcta */
+                background-repeat: no-repeat;
+                background-position: left bottom;
+                background-size: cover;
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+
+        <body>
+            <section class="py-3 py-md-5 min-vh-100 d-flex justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div style="text-align: center;">
+                            <figure class="figure">
+                                <img src="../img/logo.png" class="figure-img img-fluid rounded" alt="...">
+                            </figure>
+                        </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="text-center">
-                            <h2 class="d-flex justify-content-center align-items-center gap-2 mb-4">
-                                Super!! En Unos Momentos Uno De Nuestros Asesores Se Comunicara Con Usted
-                            </h2>
-                            <h3 class="h2 mb-2">Correo Enviado Exitosamente.</h3>
-                            <p class="mb-5">Gracias Por comunicarte con nosotros.</p>
-                            <a class="btn bsb-btn-5xl btn-dark rounded-pill px-5 fs-6 m-0" href="#" onclick="history.back(); return false;" role="button">Volver al Inicio</a>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="text-center">
+                                <h2 class="d-flex justify-content-center align-items-center gap-2 mb-4">
+                                    Super!! En Unos Momentos Uno De Nuestros Asesores Se Comunicara Con Usted
+                                </h2>
+                                <h3 class="h2 mb-2">Correo Enviado Exitosamente.</h3>
+                                <p class="mb-5">Gracias Por comunicarte con nosotros.</p>
+                                <a class="btn bsb-btn-5xl btn-dark rounded-pill px-5 fs-6 m-0" href="#" onclick="history.back(); return false;" role="button">Volver al Inicio</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </body>
     <?php
     } else {
         // Set a 500 (internal server error) response code.
@@ -142,24 +169,44 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/error-404s/error-404-1/assets/css/error-404-1.css">
         <!-- Error 404 Template 1 - Bootstrap Brain Component -->
-        <section class="py-3 py-md-5 min-vh-100 d-flex justify-content-center align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="text-center">
-                            <h2 class="d-flex justify-content-center align-items-center gap-2 mb-4">
-                                <span class="display-1 fw-bold">4</span>
-                                <i class="bi bi-exclamation-circle-fill text-danger display-4"></i>
-                                <span class="display-1 fw-bold bsb-flip-h">4</span>
-                            </h2>
-                            <h3 class="h2 mb-2">¡Ups! Tu Correo No se Puedo Enviar.</h3>
-                            <p class="mb-5">Por favor Vuelve a intentar o escribenos a nuestros canales por whatsapp.</p>
-                            <a class="btn bsb-btn-5xl btn-dark rounded-pill px-5 fs-6 m-0" href="#" onclick="history.back(); return false;" role="button">Back to Home</a>
+        <style>
+            body {
+                position: relative;
+                z-index: 1;
+                padding: 160px 0 120px;
+                background-image: url(../img/hero/fondo1.png);
+                /* Verifica que la ruta sea correcta */
+                background-repeat: no-repeat;
+                background-position: left bottom;
+                background-size: cover;
+                font-family: Arial, sans-serif;
+                line-height: 1.6;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+
+        <body>
+            <section class="py-3 py-md-5 min-vh-100 d-flex justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="text-center">
+                                <h2 class="d-flex justify-content-center align-items-center gap-2 mb-4">
+                                    <span class="display-1 fw-bold">4</span>
+                                    <i class="bi bi-exclamation-circle-fill text-danger display-4"></i>
+                                    <span class="display-1 fw-bold bsb-flip-h">4</span>
+                                </h2>
+                                <h3 class="h2 mb-2">¡Ups! Tu Correo No se Puedo Enviar.</h3>
+                                <p class="mb-5">Por favor Vuelve a intentar o escribenos a nuestros canales por whatsapp.</p>
+                                <a class="btn bsb-btn-5xl btn-dark rounded-pill px-5 fs-6 m-0" href="#" onclick="history.back(); return false;" role="button">Back to Home</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </body>
     <?php
     }
 } else {
