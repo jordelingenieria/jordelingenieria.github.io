@@ -13,10 +13,18 @@ html {
 }
 
 body {
+    position: relative;
+    z-index: 1;
+    padding: 160px 0 120px;
+    background-image: url(../img/hero/fondo1.png); /* Verifica que la ruta sea correcta */
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    background-attachment: fixed; /* Esta línea añade el efecto parallax */
     font-family: poppins, sans-serif;
     font-weight: 400;
     font-style: normal;
-    color: #6b6f92;
+    color: #000000;
     overflow-x: hidden
 }
 
@@ -40,7 +48,7 @@ button:focus,
 }
 
 a:hover {
-    color: #4e6ef1
+    color: #000001
 }
 
 a {
@@ -424,7 +432,7 @@ p {
 }
 
 .sticky .navbar .navbar-nav .nav-item a {
-    color: #313450
+    color: #000000
 }
 
 .sticky .navbar .navbar-toggler .toggler-icon {
@@ -516,7 +524,7 @@ p {
 .navbar-nav .nav-item a {
     font-size: 18px;
     font-weight: 400;
-    color: #6b6f92;
+    color: #000000;
     transition: all .3s ease-out 0s;
     padding: 10px 0;
     position: relative
@@ -527,7 +535,7 @@ p {
     .navbar-nav .nav-item a {
         display: inline-block;
         padding: 6px 0;
-        color: #6b6f92
+        color: #000000
     }
 }
 
@@ -539,7 +547,7 @@ p {
     left: auto;
     width: 0;
     height: 2px;
-    background: #4e6ef1;
+    background: #000000;
     z-index: -1;
     opacity: 0;
     border-radius: 10px;
@@ -671,15 +679,15 @@ p {
     top: -5px
 }
 
-.hero-section {
+/*.hero-section {
     position: relative;
     z-index: 1;
     padding: 160px 0 120px;
-    background-image: url(../img/hero/hero-bg.jpg);
+    background-image: url(../img/hero/fondo1.png);
     background-repeat: no-repeat;
     background-position: left bottom;
-    background-size: cover
-}
+    background-size: cover;
+}*/
 
 @media only screen and (min-width:1200px) and (max-width:1399px) {
     .hero-section {
@@ -864,9 +872,9 @@ p {
     padding-bottom: 20px
 }
 
-.service-section {
+/*.service-section {
     background-image: url(../img/service/service-bg.jpg)
-}
+}*/
 
 .service-section .single-service {
     text-align: center;
