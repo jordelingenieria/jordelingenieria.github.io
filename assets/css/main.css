@@ -34,6 +34,7 @@ body {
     box-sizing: border-box
 }
 
+
 a:focus,
 input:focus,
 textarea:focus,
@@ -91,6 +92,10 @@ h6 {
 .section-title p {
     font-size: 18px;
     line-height: 28px
+}
+
+.number{
+    color: #000000;
 }
 
 h1 a,
