@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+/* Floating button container */
+.whatsapp-float {
+    position: fixed;
+    bottom: 95px;
+    right: 20px;
+    z-index: 1000;
+}
+
+/* WhatsApp icon styles */
+.whatsapp-float a {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+}
+
+.whatsapp-float a:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Icon */
+.whatsapp-float a i {
+    line-height: inherit;
+}

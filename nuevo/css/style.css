@@ -61,7 +61,7 @@ body {
   line-height: 1.5;
   color: #6C6A74;
   text-align: left;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -9955,4 +9955,24 @@ h6,
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.portfolio-btn-wrapper {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-btn {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-btn.active {
+    background-color: #3498db;
+    color: white;
 }
