@@ -9842,7 +9842,7 @@ h6,
 }
 
 .page-header {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/page-header.jpg), no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/), no-repeat center center;
   background-size: cover;
 }
 
@@ -9975,4 +9975,31 @@ h6,
 .portfolio-btn.active {
     background-color: #3498db;
     color: white;
+}
+.bg-white {
+  background-color: #fff !important;
+}
+.service-item {
+  transition: .5s;
+}
+
+.service-item:hover {
+  box-shadow: 0 0 30px #CCCCCC;
+}
+
+.service-item i {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fd7e14;
+  background: #FFFFFF;
+  color: #fd7e14;
+  transition: .5s;
+}
+
+.service-item:hover i {
+  background: #fd7e14;
+  color: #FFFFFF;
 }
